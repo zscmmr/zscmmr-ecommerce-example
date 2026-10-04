@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#f5f5f2">
+	<title>Product Details — ZSCMMR</title>
+	<link rel="icon" type="image/png" href="favicon.png">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="zscmmr/style.css">
+</head>
+<body class="featured-page product-detail-page">
+<div class="site-shell">
+	<header class="site-header">
+		<div class="header-inner">
+			<button class="menu-toggle" type="button" aria-controls="preview-navigation" aria-expanded="false">
+				<span class="menu-toggle-label">Menu</span>
+			</button>
+			<nav class="primary-navigation" id="preview-navigation" aria-label="Main navigation">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="gallery.html">Gallery</a></li>
+					<li><a href="featured.html" aria-current="page">Shop</a></li>
+				</ul>
+			</nav>
+			<div class="site-branding">
+				<a class="custom-logo-link" href="index.html" aria-label="ZSCMMR">
+					<img class="custom-logo" src="zscmmr/assets/images/zscmmr-nav-logo.png" alt="ZSCMMR">
+				</a>
+			</div>
+			<div class="header-actions">
+				<a class="cart-link" href="cart.html">Bag <span class="cart-count">0</span></a>
+			</div>
+		</div>
+	</header>
+	<main class="site-main product-detail" id="content">
+		<section class="product-detail-hero" aria-labelledby="product-title">
+			<div class="product-detail-gallery" data-product-gallery role="region" aria-roledescription="carousel" aria-label="Product image gallery">
+				<button class="product-detail-art gallery-zoom-trigger" type="button" aria-label="Enlarge product image"></button>
+				<div class="gallery-controls">
+					<button class="gallery-arrow gallery-previous" type="button" aria-label="Previous product image">‹</button>
+					<div class="gallery-dots" aria-label="Choose product image"></div>
+					<button class="gallery-arrow gallery-next" type="button" aria-label="Next product image">›</button>
+				</div>
+				<dialog class="product-image-zoom" aria-label="Enlarged product image">
+					<button class="product-image-zoom-close" type="button" aria-label="Close enlarged image">Close</button>
+					<div class="product-image-zoom-content" data-zoom-image></div>
+				</dialog>
+			</div>
+			<div class="product-detail-summary">
+				<p class="product-detail-eyebrow">ZSCMMR Collection</p>
+				<h1 id="product-title">ZSCMMR T-Shirt</h1>
+				<p class="product-detail-price" data-product-price></p>
+				<p class="product-detail-note" data-product-description></p>
+				<section class="product-description-inline" aria-labelledby="description-heading">
+					<h2 id="description-heading">Product Details</h2>
+					<dl class="product-spec-list" data-product-specifications></dl>
+				</section>
+				<form class="preview-product-form" data-preview-product-form data-product-id="kaos">
+					<label for="preview-size" data-size-label>Size</label>
+					<select id="preview-size" name="size" required>
+					</select>
+					<label for="preview-quantity">Quantity</label>
+					<input id="preview-quantity" name="quantity" type="number" value="1" min="1" max="99" required>
+					<div class="preview-product-actions">
+						<button type="submit" name="action" value="add">Add to bag</button>
+						<button type="submit" name="action" value="buy">Buy now</button>
+					</div>
+					<p class="preview-product-status" data-cart-status role="status" aria-live="polite"></p>
+				</form>
+
+				<details class="product-detail-section product-accordion">
+					<summary>Size Guide</summary>
+					<div class="product-accordion-content">
+						<p class="size-table-note" data-size-guide></p>
+					</div>
+				</details>
+				<details class="product-detail-section product-accordion">
+					<summary>Returns Policy</summary>
+					<div class="product-accordion-content">
+						<p class="product-policy">Returns and complaints are accepted within <strong>3 days of delivery</strong>.</p>
+						<p class="product-policy">Customers <strong>must provide an unboxing video</strong> as proof when opening the package.</p>
+						<p class="product-policy">Without an unboxing video, complaints or return requests <strong>cannot be processed</strong>.</p>
+					</div>
+				</details>
+				<details class="product-detail-section product-accordion">
+					<summary>Shipping</summary>
+					<div class="product-accordion-content">
+						<p class="product-policy">Order cut-off times:</p>
+						<ul class="shipping-schedule">
+							<li><strong>Monday — Friday</strong>3:00 PM</li>
+							<li><strong>Saturday</strong>11:00 AM</li>
+							<li><strong>Sunday</strong><span class="shipping-closed">No shipping</span></li>
+						</ul>
+						<p class="product-policy">Orders placed after the cut-off time will ship on the next available day.</p>
+						<p class="product-policy shipping-warning">Please note the cut-off times.</p>
+					</div>
+				</details>
+			</div>
+		</section>
+
+		<section class="related-products" aria-labelledby="related-products-title">
+			<div class="related-products-heading">
+				<h2 id="related-products-title">Related Products</h2>
+				<a href="featured.html">View all</a>
+			</div>
+			<ul class="featured-product-grid related-product-grid" data-related-products>
+				<li class="featured-product-card">
+					<a class="featured-product-link" href="featured.html">
+						<div class="featured-product-art art-hoodie">
+							<svg class="art-front" viewBox="0 0 200 220" aria-hidden="true">
+								<path d="M70 31 84 14h32l14 17 30 15 29 42-22 15-20-27v126H53V76L33 103 11 88l29-42z" />
+								<path class="art-detail" d="M84 15c0 23 6 35 16 35s16-12 16-35M100 50v26m-7-1 7 10 7-10M68 118h64" />
+							</svg>
+							<svg class="art-hover" viewBox="0 0 200 220" aria-hidden="true">
+								<path d="M70 31 84 14h32l14 17 30 15 29 42-22 15-20-27v126H53V76L33 103 11 88l29-42z" />
+								<path class="art-detail" d="M78 31c0-29 10-39 22-39s22 10 22 39M78 31c2 18 10 27 22 27s20-9 22-27M67 116h66" />
+							</svg>
+						</div>
+						<div class="featured-product-info">
+							<h3>Studio Hoodie</h3>
+							<p>IDR 589,000</p>
+						</div>
+					</a>
+				</li>
+				<li class="featured-product-card">
+					<a class="featured-product-link" href="featured.html">
+						<div class="featured-product-art art-cap">
+							<svg class="art-front" viewBox="0 0 200 220" aria-hidden="true">
+								<path d="M38 111c4-45 29-72 66-72 36 0 62 25 65 72l-61 21-70-5z" />
+								<path class="art-detail" d="M39 111c-18 4-25 16-18 24 18 18 65 9 90-3 19-9 39-16 58-15M103 43v72" />
+							</svg>
+							<svg class="art-hover" viewBox="0 0 200 220" aria-hidden="true">
+								<path d="M38 111c4-45 29-72 66-72 36 0 62 25 65 72l-61 21-70-5z" />
+								<path class="art-detail" d="M39 111c-18-4-25 16-18 24 18 18 65 9 90-3 19-9 39-16 58-15M76 91h53m-26-48v73" />
+							</svg>
+						</div>
+						<div class="featured-product-info">
+							<h3>Everyday Cap</h3>
+							<p>IDR 189,000</p>
+						</div>
+					</a>
+				</li>
+				<li class="featured-product-card">
+					<a class="featured-product-link" href="featured.html">
+						<div class="featured-product-art art-tote">
+							<svg class="art-front" viewBox="0 0 200 220" aria-hidden="true">
+								<path d="M48 72h104l12 133H36z" />
+								<path class="art-detail" d="M68 75V53c0-25 13-40 32-40s32 15 32 40v22M69 106h62" />
+							</svg>
+							<svg class="art-hover" viewBox="0 0 200 220" aria-hidden="true">
+								<path d="M48 72h104l12 133H36z" />
+								<path class="art-detail" d="M68 75V53c0-25 13-40 32-40s32 15 32 40v22M59 101h82v68H59zM74 117h52" />
+							</svg>
+						</div>
+						<div class="featured-product-info">
+							<h3>Utility Tote</h3>
+							<p>IDR 149,000</p>
+						</div>
+					</a>
+				</li>
+				<li class="featured-product-card">
+					<a class="featured-product-link" href="featured.html">
+						<div class="featured-product-art art-socks">
+							<svg class="art-front" viewBox="0 0 200 220" aria-hidden="true">
+								<path d="M47 19h53v92c0 17-9 28-25 37l-33 19c-15 9-18 25-8 36 10 11 27 10 43 1l49-29c21-13 32-33 32-58V19h-53v88c0 5-2 8-7 11l-10 6V19H47z" />
+								<path class="art-detail" d="M47 42h53m58 0h-53" />
+							</svg>
+							<svg class="art-hover" viewBox="0 0 200 220" aria-hidden="true">
+								<path d="M47 19h53v92c0 17-9 28-25 37l-33 19c-15 9-18 25-8 36 10 11 27 10 43 1l49-29c21-13 32-33 32-58V19h-53v88c0 5-2 8-7 11l-10 6V19H47z" />
+								<path class="art-detail" d="M47 42h53m58 0h-53M79 151l38 34" />
+							</svg>
+						</div>
+						<div class="featured-product-info">
+							<h3>Studio Socks</h3>
+							<p>IDR 89,000</p>
+						</div>
+					</a>
+				</li>
+			</ul>
+		</section>
+
+		<a class="product-detail-back" href="featured.html">← Back to shop</a>
+	</main>
+	<footer class="site-footer">
+		<div class="footer-inner">
+			<p>&copy; 2026 ZSCMMR. All rights reserved.</p>
+			<p>Built for the ones who move different.</p>
+			<p><a href="mailto:nexbyte.wrld@gmail.com">Contact</a></p>
+		</div>
+	</footer>
+</div>
+<script src="zscmmr/assets/js/navigation.js"></script>
+<script src="zscmmr/assets/js/storefront-products.js"></script>
+<script src="zscmmr/assets/js/product-gallery.js"></script>
+<script src="zscmmr/assets/js/cart-preview.js"></script>
+</body>
+</html>

@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 240" role="img" aria-labelledby="title">
+	<title id="title">Water Reactive Cargo product illustration</title>
+	<path fill="#20201e" d="m68 24 21-12h22l21 12 31 17 27 42-21 15-20-24v149H51V74L31 98 10 83l27-42z"/>
+	<path fill="none" stroke="#aaa" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M89 14c0 21 4 31 11 31s11-10 11-31M68 112h31v39H68zm33 0h31v39h-31zm-26 6v25m39-25v25M99 45v42m-7-2 7 9 7-9"/>
+</svg>
